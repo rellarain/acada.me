@@ -1,0 +1,469 @@
+@use "sass:math";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    border-collapse: collapse;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+// HIGHER STYLING
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+
+
+
+
+
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+// TOGGLE STYLING
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+
+
+// --------------------------------------------------------------------------------
+// day/night toggle
+// --------------------------------------------------------------------------------
+
+
+// --------------------------------------------------------------------------------
+// account console toggle
+// --------------------------------------------------------------------------------
+
+.accountConsoleOpen {
+    #userHeader {height: calc(100vh - 10px);}    
+}
+.accountConsoleClosed {
+    #userHeader {height: 60px;}    
+}
+
+
+// --------------------------------------------------------------------------------
+// user console toggle (planner, dashboard, social)
+// --------------------------------------------------------------------------------
+
+.userConsolePlanner {
+    main {
+        .userConsoles {top: 0;}
+    }
+}
+.userConsoleDash {
+    main {
+        .userConsoles {top: calc(-100vh + 30px);}
+    }
+}
+.userConsoleSocial {
+    main {
+        .userConsoles {top: calc(-200vh + 30px);}
+    }
+}
+
+// --------------------------------------------------------------------------------
+// service console toggle 
+// --------------------------------------------------------------------------------
+
+.openService {
+    .assessmentConsole {top: -120vh; transition: top .8s;}
+    .scholarConsole {right: -120vw; transition: right 1s;}
+    .adminConsole {bottom: -120vh; transition: bottom .8s;}
+
+}
+.openServiceAssess {
+    .assessmentConsole {top: 0; transition: top .8s .6s;}
+    .scholarConsole {right: -120vw; transition: right .8s;}
+    .adminConsole {bottom: -120vh; transition: bottom .8s;}
+}
+.openServiceScholar {
+    .assessmentConsole {top: -120vh; transition: top .8s;}
+    .scholarConsole {right: 0; transition: right .8s .6s;}
+    .adminConsole {bottom: -120vh; transition: bottom .8s;}
+}
+.openServiceAdmin {
+    .assessmentConsole {top: -120vh; transition: top .8s;}
+    .scholarConsole {right: -120vw; transition: right .8s;}
+    .adminConsole {bottom: 0; transition: bottom .8s .6s;}
+}
+
+
+// --------------------------------------------------------------------------------
+// HELPER CONSOLE TOGGLE (min and mid screens are width responsive)
+// --------------------------------------------------------------------------------
+
+.helperMaxOpen {
+    aside {left: 0; width: 100vw;}
+    main {right: -100vw; width: 100vw;}
+}
+.helperMaxClosed {
+    aside {left: -100vw; width: 100vw;}
+    main {right: 0; width: 100vw;}
+}
+
+
+
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+// STABLE STYLING
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+
+#root {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    #userHeader {
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: height 1s;
+        box-shadow: rgba(0, 0, 0, 0.3) 0 8px 8px;
+        
+        
+
+        
+        // TEMP STYLING
+        background-color: rgb(88, 88, 88);
+
+        img {
+            width: 48px;
+            height: 48px;
+            position: absolute;
+            cursor: pointer;
+            bottom: 12px;
+            left: 0;
+            background-color: gray;
+        }
+        table {
+            width: 100vw;
+            height: 12px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: orange;
+        }
+        .accountConsole {
+            width: calc(100vw - 30px);
+            height: calc(100vh - 100px);
+            position: absolute;
+            bottom: 75px;
+            left: 15px;
+            background-color: darkgray;
+        }
+        .closeConsole {
+            position: absolute;
+            right: 5px;
+            bottom: 17px;
+        }
+    }
+    aside {
+        position: absolute;
+        top: 60px;
+        transition: left 1s, width 1s;
+
+        
+        // TOGGLE STYLING
+        height: calc(100vh - 60px);
+        
+        
+
+        // TEMP STYLING
+        background-color: GREEN;
+    }
+    main {
+        position: absolute;
+        top: 60px;
+        transition: width 1s, right 1s;
+        box-shadow: rgba(0, 0, 0, 0.3) -8px 0 8px;
+
+        // TOGGLE STYLING
+        height: calc(100vh - 60px);
+        
+        
+
+        .userConsoles {
+            height: calc(300vh - 90px);
+            position: absolute;
+            width: 100%;
+            transition: top 1s;
+
+
+
+            // TOGGLE STYLING
+            right: 0;            
+
+
+
+            .userConsole {
+                position: absolute;
+                height: calc(100vh - 120px);
+                width: calc(100% - 60px);
+                background-color: rgba(43, 43, 43, 0.384);
+                left: 30px;
+
+                &:nth-child(1) {top: 30px;}
+                &:nth-child(2) {top: 100vh;}
+                &:nth-child(3) {top: 200vh;}
+            }
+        }
+
+        .serviceConsole {
+            margin: 20px;
+            position: absolute;
+            width: calc(100% - 40px);
+            height: calc(100% - 40px);
+        }
+        .assessmentConsole {
+            background-color: red;
+        }
+        .scholarConsole {
+            background-color: orange;
+        }
+        .adminConsole {
+            background-color: magenta;
+        }
+
+
+    }
+}
+
+
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+// RESPONSIVE STYLING
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+
+
+
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+// WIDTH RESPONSIVE (400,800,1200,1600,2000,2400,2800,3200,3600,4000)
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+
+
+// --------------------------------------------------------------------------------
+// 1 COLUMN: 
+// --------------------------------------------------------------------------------
+@media screen and (min-width:0) {
+    .helperMinOpen {
+        aside {left: 0; width: 100vw;}
+        main {right: -120vw; width: 100vw;}
+    }
+    .helperMinClosed {
+        aside {left: -120vw; width: 100vw;}
+        main {right: 0; width: 100vw;}
+    }
+    .helperMidOpen {
+        aside {left: 0; width: 100vw;}
+        main {right: -120vw; width: 100vw;}
+    }
+    .helperMidClosed {
+        aside {left: -120vw; width: 100vw;}
+        main {right: 0; width: 100vw;}
+    }
+}
+
+// --------------------------------------------------------------------------------
+// 1+ COLUMN: 
+// --------------------------------------------------------------------------------
+@media screen and (min-width:400px) {}
+
+// --------------------------------------------------------------------------------
+// 2+ COLUMNS: 
+// --------------------------------------------------------------------------------
+@media screen and (min-width:800px) {
+    
+    .helperMinOpen {
+        aside {left: 0; width: 400px;}
+        main {right: 0; width: calc(100vw - 400px);}
+    }
+    .helperMinClosed {
+        aside {left: -400px; width: 400px;}
+        main {right: 0; width: 100vw;}
+    }
+    .helperMidOpen {
+        aside {left: 0; width: 400px;}
+        main {right: 0; width: calc(100vw - 400px);}
+    }
+    .helperMidClosed {
+        aside {left: -400px; width: 400px;}
+        main {right: 0; width: 100vw;}
+    }
+
+}
+
+// --------------------------------------------------------------------------------
+// 3+ COLUMNS: 
+// --------------------------------------------------------------------------------
+@media screen and (min-width:1200px) {
+    
+    .helperMinOpen {
+        aside {left: 0; width: 400px;}
+        main {right: 0; width: calc(100vw - 400px);}
+    }
+    .helperMinClosed {
+        aside {left: -400px; width: 400px;}
+        main {right: 0; width: 100vw;}
+    }
+    .helperMidOpen {
+        aside {left: 0; width: 800px;}
+        main {right: 0; width: calc(100vw - 800px);}
+    }
+    .helperMidClosed {
+        aside {left: -800px; width: 800px;}
+        main {right: 0; width: 100vw;}
+    }
+
+}
+
+// --------------------------------------------------------------------------------
+// 4+ COLUMNS: 
+// --------------------------------------------------------------------------------
+@media screen and (min-width:1600px) {}
+
+// --------------------------------------------------------------------------------
+// 5+ COLUMNS: 
+// --------------------------------------------------------------------------------
+@media screen and (min-width:2000px) {
+
+    .helperMidOpen {
+        aside {left: 0; width: 1200px;}
+        main {right: 0; width: calc(100vw - 1200px);}
+    }
+    .helperMidClosed {
+        aside {left: -1200px; width: 1200px;}
+        main {right: 0; width: 100vw;}
+    }
+
+
+}
+
+// --------------------------------------------------------------------------------
+// 6+ COLUMNS: 
+// --------------------------------------------------------------------------------
+@media screen and (min-width:2400px) {
+
+    .helperMinOpen {
+        aside {left: 0; width: 800px;}
+        main {right: 0; width: calc(100vw - 800px);}
+    }
+    .helperMinClosed {
+        aside {left: -800px; width: 800px;}
+        main {right: 0; width: 100vw;}
+    }
+    
+}
+
+// --------------------------------------------------------------------------------
+// 7+ COLUMNS: 
+// --------------------------------------------------------------------------------
+@media screen and (min-width:2800px) {}
+
+// --------------------------------------------------------------------------------
+// 8+ COLUMNS: 
+// --------------------------------------------------------------------------------
+@media screen and (min-width:3200px) {}
+
+// --------------------------------------------------------------------------------
+// 9+ COLUMNS: 
+// --------------------------------------------------------------------------------
+@media screen and (min-width:3600px) {}
+
+
+
+
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+// HEIGHT RESPONSIVE (400,800,1200,1600,2000,2400)
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+
+// Helper Console / Chats: 
+// Console / Help Desk: 
+// User Header: 
+// Console Header: 
+// Console Desk Header: 
+
+// --------------------------------------------------------------------------------
+// 1 ROW: 
+// --------------------------------------------------------------------------------
+@media screen and (min-height:0) {}
+
+// --------------------------------------------------------------------------------
+// 1+ ROW: 
+// --------------------------------------------------------------------------------
+@media screen and (min-height:400px) {}
+
+// --------------------------------------------------------------------------------
+// 2+ ROWS: 
+// --------------------------------------------------------------------------------
+@media screen and (min-height:800px) {}
+
+// --------------------------------------------------------------------------------
+// 3+ ROWS: 
+// --------------------------------------------------------------------------------
+@media screen and (min-height:1200px) {}
+
+// --------------------------------------------------------------------------------
+// 4+ ROWS: 
+// --------------------------------------------------------------------------------
+@media screen and (min-height:1600px) {}
+
+// --------------------------------------------------------------------------------
+// 5+ ROWS: 
+// --------------------------------------------------------------------------------
+@media screen and (min-height:2000px) {}
+
+// --------------------------------------------------------------------------------
+// 6+ ROWS: 
+// --------------------------------------------------------------------------------
+@media screen and (min-height:2400px) {}

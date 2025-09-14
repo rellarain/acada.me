@@ -1,0 +1,379 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  border-collapse: collapse;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.accountConsoleOpen #userHeader {
+  height: calc(100vh - 10px);
+}
+
+.accountConsoleClosed #userHeader {
+  height: 60px;
+}
+
+.userConsolePlanner main .userConsoles {
+  top: 0;
+}
+
+.userConsoleDash main .userConsoles {
+  top: calc(-100vh + 30px);
+}
+
+.userConsoleSocial main .userConsoles {
+  top: calc(-200vh + 30px);
+}
+
+.openService .assessmentConsole {
+  top: -120vh;
+  transition: top 0.8s;
+}
+.openService .scholarConsole {
+  right: -120vw;
+  transition: right 1s;
+}
+.openService .adminConsole {
+  bottom: -120vh;
+  transition: bottom 0.8s;
+}
+
+.openServiceAssess .assessmentConsole {
+  top: 0;
+  transition: top 0.8s 0.6s;
+}
+.openServiceAssess .scholarConsole {
+  right: -120vw;
+  transition: right 0.8s;
+}
+.openServiceAssess .adminConsole {
+  bottom: -120vh;
+  transition: bottom 0.8s;
+}
+
+.openServiceScholar .assessmentConsole {
+  top: -120vh;
+  transition: top 0.8s;
+}
+.openServiceScholar .scholarConsole {
+  right: 0;
+  transition: right 0.8s 0.6s;
+}
+.openServiceScholar .adminConsole {
+  bottom: -120vh;
+  transition: bottom 0.8s;
+}
+
+.openServiceAdmin .assessmentConsole {
+  top: -120vh;
+  transition: top 0.8s;
+}
+.openServiceAdmin .scholarConsole {
+  right: -120vw;
+  transition: right 0.8s;
+}
+.openServiceAdmin .adminConsole {
+  bottom: 0;
+  transition: bottom 0.8s 0.6s;
+}
+
+.helperMaxOpen aside {
+  left: 0;
+  width: 100vw;
+}
+.helperMaxOpen main {
+  right: -100vw;
+  width: 100vw;
+}
+
+.helperMaxClosed aside {
+  left: -100vw;
+  width: 100vw;
+}
+.helperMaxClosed main {
+  right: 0;
+  width: 100vw;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+#root #userHeader {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: height 1s;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 8px 8px;
+  background-color: rgb(88, 88, 88);
+}
+#root #userHeader img {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  cursor: pointer;
+  bottom: 12px;
+  left: 0;
+  background-color: gray;
+}
+#root #userHeader table {
+  width: 100vw;
+  height: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: orange;
+}
+#root #userHeader .accountConsole {
+  width: calc(100vw - 30px);
+  height: calc(100vh - 100px);
+  position: absolute;
+  bottom: 75px;
+  left: 15px;
+  background-color: darkgray;
+}
+#root #userHeader .closeConsole {
+  position: absolute;
+  right: 5px;
+  bottom: 17px;
+}
+#root aside {
+  position: absolute;
+  top: 60px;
+  transition: left 1s, width 1s;
+  height: calc(100vh - 60px);
+  background-color: GREEN;
+}
+#root main {
+  position: absolute;
+  top: 60px;
+  transition: width 1s, right 1s;
+  box-shadow: rgba(0, 0, 0, 0.3) -8px 0 8px;
+  height: calc(100vh - 60px);
+}
+#root main .userConsoles {
+  height: calc(300vh - 90px);
+  position: absolute;
+  width: 100%;
+  transition: top 1s;
+  right: 0;
+}
+#root main .userConsoles .userConsole {
+  position: absolute;
+  height: calc(100vh - 120px);
+  width: calc(100% - 60px);
+  background-color: rgba(43, 43, 43, 0.384);
+  left: 30px;
+}
+#root main .userConsoles .userConsole:nth-child(1) {
+  top: 30px;
+}
+#root main .userConsoles .userConsole:nth-child(2) {
+  top: 100vh;
+}
+#root main .userConsoles .userConsole:nth-child(3) {
+  top: 200vh;
+}
+#root main .serviceConsole {
+  margin: 20px;
+  position: absolute;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+}
+#root main .assessmentConsole {
+  background-color: red;
+}
+#root main .scholarConsole {
+  background-color: orange;
+}
+#root main .adminConsole {
+  background-color: magenta;
+}
+
+@media screen and (min-width: 0) {
+  .helperMinOpen aside {
+    left: 0;
+    width: 100vw;
+  }
+  .helperMinOpen main {
+    right: -120vw;
+    width: 100vw;
+  }
+  .helperMinClosed aside {
+    left: -120vw;
+    width: 100vw;
+  }
+  .helperMinClosed main {
+    right: 0;
+    width: 100vw;
+  }
+  .helperMidOpen aside {
+    left: 0;
+    width: 100vw;
+  }
+  .helperMidOpen main {
+    right: -120vw;
+    width: 100vw;
+  }
+  .helperMidClosed aside {
+    left: -120vw;
+    width: 100vw;
+  }
+  .helperMidClosed main {
+    right: 0;
+    width: 100vw;
+  }
+}
+@media screen and (min-width: 800px) {
+  .helperMinOpen aside {
+    left: 0;
+    width: 400px;
+  }
+  .helperMinOpen main {
+    right: 0;
+    width: calc(100vw - 400px);
+  }
+  .helperMinClosed aside {
+    left: -400px;
+    width: 400px;
+  }
+  .helperMinClosed main {
+    right: 0;
+    width: 100vw;
+  }
+  .helperMidOpen aside {
+    left: 0;
+    width: 400px;
+  }
+  .helperMidOpen main {
+    right: 0;
+    width: calc(100vw - 400px);
+  }
+  .helperMidClosed aside {
+    left: -400px;
+    width: 400px;
+  }
+  .helperMidClosed main {
+    right: 0;
+    width: 100vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .helperMinOpen aside {
+    left: 0;
+    width: 400px;
+  }
+  .helperMinOpen main {
+    right: 0;
+    width: calc(100vw - 400px);
+  }
+  .helperMinClosed aside {
+    left: -400px;
+    width: 400px;
+  }
+  .helperMinClosed main {
+    right: 0;
+    width: 100vw;
+  }
+  .helperMidOpen aside {
+    left: 0;
+    width: 800px;
+  }
+  .helperMidOpen main {
+    right: 0;
+    width: calc(100vw - 800px);
+  }
+  .helperMidClosed aside {
+    left: -800px;
+    width: 800px;
+  }
+  .helperMidClosed main {
+    right: 0;
+    width: 100vw;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .helperMidOpen aside {
+    left: 0;
+    width: 1200px;
+  }
+  .helperMidOpen main {
+    right: 0;
+    width: calc(100vw - 1200px);
+  }
+  .helperMidClosed aside {
+    left: -1200px;
+    width: 1200px;
+  }
+  .helperMidClosed main {
+    right: 0;
+    width: 100vw;
+  }
+}
+@media screen and (min-width: 2400px) {
+  .helperMinOpen aside {
+    left: 0;
+    width: 800px;
+  }
+  .helperMinOpen main {
+    right: 0;
+    width: calc(100vw - 800px);
+  }
+  .helperMinClosed aside {
+    left: -800px;
+    width: 800px;
+  }
+  .helperMinClosed main {
+    right: 0;
+    width: 100vw;
+  }
+}/*# sourceMappingURL=style.css.map */
