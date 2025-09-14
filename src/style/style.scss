@@ -49,6 +49,19 @@ table {
 
 // --------------------------------------------------------------------------------
 // --------------------------------------------------------------------------------
+// VARIABLE STYLING
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+
+
+// temporary !!!!
+
+$themeHue: 40;
+$accentHue: 30;
+$alertHue: 50;
+
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // HIGHER STYLING
 // --------------------------------------------------------------------------------
 // --------------------------------------------------------------------------------
@@ -156,19 +169,15 @@ table {
     top: 0;
     left: 0;
     overflow: hidden;
+    font-family: sans-serif;
     #userHeader {
         width: 100vw;
         position: absolute;
         top: 0;
         left: 0;
         transition: height 1s;
-        box-shadow: rgba(0, 0, 0, 0.3) 0 8px 8px;
+        box-shadow: hsla(0, 0%, 0%, 0.3) 0 8px 8px;
         
-        
-
-        
-        // TEMP STYLING
-        background-color: rgb(88, 88, 88);
 
         img {
             width: 48px;
@@ -179,7 +188,7 @@ table {
             left: 0;
             background-color: gray;
         }
-        table {
+        .workDay {
             width: 100vw;
             height: 12px;
             position: absolute;
@@ -193,13 +202,36 @@ table {
             position: absolute;
             bottom: 75px;
             left: 15px;
-            background-color: darkgray;
+            background-color: rgb(212, 212, 212);
+            border-radius: 4px;
         }
-        .closeConsole {
+        .socialButtons {
             position: absolute;
-            right: 5px;
-            bottom: 17px;
+            bottom: 15px;
+            left: 55px;
+            font-size: 14px;
+            color: white;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+            button {
+                padding: 0;
+                letter-spacing: inherit;
+                font-weight: inherit;
+                cursor: pointer;
+                color: inherit;
+                line-height: 16px;
+                background-color: rgba(0, 0, 0, 0);
+                border: none;
+            }
         }
+
+
+
+
+        // TEMP STYLING
+        background-color: rgb(88, 88, 88);
+
+
     }
     aside {
         position: absolute;
@@ -213,7 +245,7 @@ table {
         
 
         // TEMP STYLING
-        background-color: GREEN;
+        // background-color: GREEN;
     }
     main {
         position: absolute;
@@ -228,6 +260,7 @@ table {
 
         .userConsoles {
             height: calc(300vh - 90px);
+            height: calc(300% + 90px);
             position: absolute;
             width: 100%;
             transition: top 1s;
@@ -241,35 +274,102 @@ table {
 
             .userConsole {
                 position: absolute;
-                height: calc(100vh - 120px);
-                width: calc(100% - 60px);
-                background-color: rgba(43, 43, 43, 0.384);
-                left: 30px;
+                height: calc(100vh - 140px);
+                width: calc(100% - 80px);
+                left: 40px;
+                // border-radius: 4px;
+                overflow: hidden;
 
-                &:nth-child(1) {top: 30px;}
-                &:nth-child(2) {top: 100vh;}
-                &:nth-child(3) {top: 200vh;}
+
+                &:nth-child(1) {top: 40px;}
+                &:nth-child(2) {top: calc(100vh + 10px);}
+                &:nth-child(3) {top: calc(200vh + 10px);}
             }
         }
-
         .serviceConsole {
-            margin: 20px;
+            margin: 30px;
             position: absolute;
-            width: calc(100% - 40px);
-            height: calc(100% - 40px);
+            width: calc(100% - 60px);
+            height: calc(100vh - 120px);
+            border-radius: 4px;
+            overflow: hidden;
         }
         .assessmentConsole {
-            background-color: red;
+            background-color: rgb(119, 33, 33);
         }
         .scholarConsole {
-            background-color: orange;
+            background-color: rgb(143, 110, 49);
         }
         .adminConsole {
-            background-color: magenta;
+            background-color: rgb(185, 101, 185);
         }
+        .plannerConsole {
+            background-color: rgba(0, 0, 0, 0.363);
+        }
+        
+
 
 
     }
+
+
+    
+        .console {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            .consoleProgress {
+                width: 100%;
+                height: 10px;
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+            .consoleTitle {
+                font-size: 24px;
+                font-weight: 600;
+                letter-spacing: 2px;
+                position: absolute;
+                top: 20px;
+                left: 10px;
+                text-transform: uppercase;
+            }
+            .consoleTime {
+                font-size: 20px;
+                font-weight: 600;
+                letter-spacing: 1.5px;
+                position: absolute;
+                right: 60px;
+                top: 20px;
+                line-height: 20px;
+            }
+            .consoleDate {
+                font-size: 16px;
+                position: absolute;
+                right: 60px;
+                top: 40px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                line-height: 20px;
+            }
+        }
+
+
+
+
+
+        .consoleClose {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            height: 40px;
+            width: 40px;
+            padding: 0;
+            font-weight: 600;
+            font-size: 16px;
+        }
 }
 
 
@@ -296,18 +396,18 @@ table {
 @media screen and (min-width:0) {
     .helperMinOpen {
         aside {left: 0; width: 100vw;}
-        main {right: -120vw; width: 100vw;}
+        main {right: -100vw; width: 100vw;}
     }
     .helperMinClosed {
-        aside {left: -120vw; width: 100vw;}
+        aside {left: -100vw; width: 100vw;}
         main {right: 0; width: 100vw;}
     }
     .helperMidOpen {
         aside {left: 0; width: 100vw;}
-        main {right: -120vw; width: 100vw;}
+        main {right: -100vw; width: 100vw;}
     }
     .helperMidClosed {
-        aside {left: -120vw; width: 100vw;}
+        aside {left: -100vw; width: 100vw;}
         main {right: 0; width: 100vw;}
     }
 }

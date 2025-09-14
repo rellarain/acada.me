@@ -3,8 +3,16 @@ import useWindowDimensions from './functionality/viewport';
 import Console from './components/console';
 
 
+
 function App() {
 
+
+
+
+  // 
+
+
+  // Viewport
   const {viewportWidth, viewportHeight} = useWindowDimensions();
   let viewportColumns = Math.floor(viewportWidth / 400);
   let viewportRows = Math.floor(viewportHeight / 400);
@@ -60,12 +68,52 @@ function App() {
   }
   const [helperConsoleSize, setHelperConsoleSize] = useState("Min");
   function handleHelperConsoleSize() {
-    if (helperConsoleSize === "Min") {
-      setHelperConsoleSize("Mid");
-    } else if (helperConsoleSize === "Mid") {
+    if (helperConsoleSize === "Min" && viewportWidth <= 800) {
+      setHelperConsoleSize("Min");
+    } else if (helperConsoleSize === "Min" && viewportWidth < 1200) {
       setHelperConsoleSize("Max");
+    } else if (helperConsoleSize === "Min" && viewportWidth > 1200) {
+      setHelperConsoleSize("Mid");
+    } else if (helperConsoleSize === "Mid" && viewportWidth <= 800) {
+      setHelperConsoleSize("Min");
+    } else if (helperConsoleSize === "Mid" && viewportWidth < 1200) {
+      setHelperConsoleSize("Min");
+    } else if (helperConsoleSize === "Mid" && viewportWidth > 1200) {
+      setHelperConsoleSize("Max");
+    } else if (helperConsoleSize === "Max" && viewportWidth <= 800) {
+      setHelperConsoleSize("Min");
+    } else if (helperConsoleSize === "Max" && viewportWidth < 1200) {
+      setHelperConsoleSize("Min");
+    } else if (helperConsoleSize === "Max" && viewportWidth > 1200) {
+      setHelperConsoleSize("Min");
     } else {setHelperConsoleSize("Min");}
   }
+
+
+  // Social Navigation-------------- UNFINISHED!!!!!!!
+
+  let districtSpec = "0000";
+  let communitySpec = "0000";
+  let userSpec = "00000";
+  let regionID= "000";
+  let districtID = regionID+"-"+districtSpec;
+  let communityID = districtID+"-"+communitySpec;
+  let userID = communityID+"-"+userSpec;
+
+
+  const [socialSpaceCode,setSocialSpaceCode] = useState("");
+  function handleSocialRegion() {
+    if (socialSpaceCode !== "") {
+      
+    }
+  }
+
+
+
+
+
+
+
 
   return (
     <div className={"interface accountConsole"+accountConsoleState+" userConsole"+openUserConsole+" openService"+openServiceConsole+" helper"+helperConsoleSize+helperConsoleState}>
@@ -76,13 +124,12 @@ function App() {
       <main>
         <div className={"userConsoles"}>
           <div className={"userConsole plannerConsole"}>
-            Planner
-            <button onClick={handleUserDash}>X</button>
+            <Console consoleTitle='Planner'/>
+            <button className={'consoleClose'} onClick={handleUserDash}>X</button>
           </div>
           <div className={"userConsole dashConsole"}>
-            Dash
+            Dashboard
             <button onClick={handleUserPlanner}>Planner</button>
-            <button onClick={handleUserSocial}>Social</button>
             <button onClick={handleAssessConsole}>Assessment</button>
             <button onClick={handleScholarConsole}>Scholar</button>
             <button onClick={handleAdminConsole}>Admin</button>
@@ -94,30 +141,57 @@ function App() {
             width:    {viewportWidth}, {viewportColumns}+ columns
           </div>
           <div className={"userConsole socialConsole"}>
-            Social
-            <button onClick={handleUserDash}>X</button>
+            Social<br/>
+            socialSpaceCode<br/>
+            <button className={'consoleClose'} onClick={handleUserDash}>X</button>
           </div>
         </div>
-        <Console consoleTitle='assessment'/>
-        <Console consoleTitle='scholar'/>
-        <Console consoleTitle='admin'/>
+        <div className={'serviceConsole assessmentConsole'}>
+          <Console consoleTitle='Assessment'/>
+          <button className={'consoleClose'} onClick={handleAssessConsole}>X</button>
+        </div>
+        <div className={'serviceConsole scholarConsole'}>
+          <Console consoleTitle='Scholar'/>
+          <button className={'consoleClose'} onClick={handleScholarConsole}>X</button>
+        </div>
+        <div className={'serviceConsole adminConsole'}>
+          <Console consoleTitle='Admin'/>
+          <button className={'consoleClose'} onClick={handleAdminConsole}>X</button>
+        </div>
       </main>
       <header id='userHeader'>
         <img onClick={handleAccountState}/>
-        <table></table>
+        <table className='workDay'></table>
         <div className='accountConsole'>
+          <Console consoleTitle='Account'/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
           height:     {viewportHeight}, {viewportRows}+ rows <br/>
           width:    {viewportWidth}, {viewportColumns}+ columns
           <br/>
           <br/>
           <br/>
           <br/>
-          <br/> Customize Colors:
-          <br/> Customize Schedule:
+          <br/>
+          <br/>{userID}
+          <br/>
+          <br/> Customization: theme, accent, alert, profile card, profile picture, thumbnail, header,
+          <br/> Schedule: admin schedule (), user schedule (), assessment schedule (), scholar schedule ()
+          <br/> Connections: 
+          <br/> Portfolio: 
+          <br/>
+          <br/>
+          <button className='consoleClose' onClick={handleAccountState}>x</button>
           
 
         </div>
-        <button className='closeConsole' onClick={closeServiceConsoles}>Close {openServiceConsole}</button>
+        <div className={'socialButtons'}><button onClick={handleUserSocial}>{regionID}</button>-<button onClick={handleUserSocial}>{districtSpec}</button>-<button onClick={handleUserSocial}>{communitySpec}</button>-<button onClick={handleUserSocial}>{userSpec}</button></div>
 
       </header>
     </div>

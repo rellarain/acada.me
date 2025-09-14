@@ -146,6 +146,7 @@ table {
   top: 0;
   left: 0;
   overflow: hidden;
+  font-family: sans-serif;
 }
 #root #userHeader {
   width: 100vw;
@@ -153,7 +154,7 @@ table {
   top: 0;
   left: 0;
   transition: height 1s;
-  box-shadow: rgba(0, 0, 0, 0.3) 0 8px 8px;
+  box-shadow: hsla(0, 0%, 0%, 0.3) 0 8px 8px;
   background-color: rgb(88, 88, 88);
 }
 #root #userHeader img {
@@ -165,7 +166,7 @@ table {
   left: 0;
   background-color: gray;
 }
-#root #userHeader table {
+#root #userHeader .workDay {
   width: 100vw;
   height: 12px;
   position: absolute;
@@ -179,19 +180,33 @@ table {
   position: absolute;
   bottom: 75px;
   left: 15px;
-  background-color: darkgray;
+  background-color: rgb(212, 212, 212);
+  border-radius: 4px;
 }
-#root #userHeader .closeConsole {
+#root #userHeader .socialButtons {
   position: absolute;
-  right: 5px;
-  bottom: 17px;
+  bottom: 15px;
+  left: 55px;
+  font-size: 14px;
+  color: white;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+#root #userHeader .socialButtons button {
+  padding: 0;
+  letter-spacing: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+  color: inherit;
+  line-height: 16px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
 }
 #root aside {
   position: absolute;
   top: 60px;
   transition: left 1s, width 1s;
   height: calc(100vh - 60px);
-  background-color: GREEN;
 }
 #root main {
   position: absolute;
@@ -202,6 +217,7 @@ table {
 }
 #root main .userConsoles {
   height: calc(300vh - 90px);
+  height: calc(300% + 90px);
   position: absolute;
   width: 100%;
   transition: top 1s;
@@ -209,34 +225,89 @@ table {
 }
 #root main .userConsoles .userConsole {
   position: absolute;
-  height: calc(100vh - 120px);
-  width: calc(100% - 60px);
-  background-color: rgba(43, 43, 43, 0.384);
-  left: 30px;
+  height: calc(100vh - 140px);
+  width: calc(100% - 80px);
+  left: 40px;
+  overflow: hidden;
 }
 #root main .userConsoles .userConsole:nth-child(1) {
-  top: 30px;
+  top: 40px;
 }
 #root main .userConsoles .userConsole:nth-child(2) {
-  top: 100vh;
+  top: calc(100vh + 10px);
 }
 #root main .userConsoles .userConsole:nth-child(3) {
-  top: 200vh;
+  top: calc(200vh + 10px);
 }
 #root main .serviceConsole {
-  margin: 20px;
+  margin: 30px;
   position: absolute;
-  width: calc(100% - 40px);
-  height: calc(100% - 40px);
+  width: calc(100% - 60px);
+  height: calc(100vh - 120px);
+  border-radius: 4px;
+  overflow: hidden;
 }
 #root main .assessmentConsole {
-  background-color: red;
+  background-color: rgb(119, 33, 33);
 }
 #root main .scholarConsole {
-  background-color: orange;
+  background-color: rgb(143, 110, 49);
 }
 #root main .adminConsole {
-  background-color: magenta;
+  background-color: rgb(185, 101, 185);
+}
+#root main .plannerConsole {
+  background-color: rgba(0, 0, 0, 0.363);
+}
+#root .console {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#root .console .consoleProgress {
+  width: 100%;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#root .console .consoleTitle {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  text-transform: uppercase;
+}
+#root .console .consoleTime {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  position: absolute;
+  right: 60px;
+  top: 20px;
+  line-height: 20px;
+}
+#root .console .consoleDate {
+  font-size: 16px;
+  position: absolute;
+  right: 60px;
+  top: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+#root .consoleClose {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 0) {
@@ -245,11 +316,11 @@ table {
     width: 100vw;
   }
   .helperMinOpen main {
-    right: -120vw;
+    right: -100vw;
     width: 100vw;
   }
   .helperMinClosed aside {
-    left: -120vw;
+    left: -100vw;
     width: 100vw;
   }
   .helperMinClosed main {
@@ -261,11 +332,11 @@ table {
     width: 100vw;
   }
   .helperMidOpen main {
-    right: -120vw;
+    right: -100vw;
     width: 100vw;
   }
   .helperMidClosed aside {
-    left: -120vw;
+    left: -100vw;
     width: 100vw;
   }
   .helperMidClosed main {

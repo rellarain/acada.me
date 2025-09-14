@@ -1,0 +1,1696 @@
+{
+    "General": {
+        "Header": {
+            "General": {},
+            "Display Name": {},
+            "Role": {},
+            "Organization ID": {},
+            "Navigation": {},
+            "WorkDay": {
+                "" : {},
+                "Intervals" : {},
+                "Scheduled Activity" : {"Scheduled": "", "Unscheduled": ""},
+                "User Activity" : {"Scheduled": "", "Unscheduled": ""},
+                "Admin Activity" : {
+                    "High": "more completed tasks than quarterly/monthly average", 
+                    "Average": "completed tasks within 2 SD of quarterly/monthly average", 
+                    "Low": "less completed tasks than quarterly/monthly average"
+                },
+                "Break Activity" : {
+                    "Accrual": "10 mins every 2 activity points OR 10 mins every 20 mins, whichever comes first", 
+                    "High": "", 
+                    "Average": "", 
+                    "Low": ""
+                }
+            }
+        },
+        "Sidebar": {
+            "General": {},
+            "Sidebar Title": {},
+            "Sidebar Tabs": {},
+            "Notifications": {
+                "Account": {},
+                "Journal": {},
+                "Social": {},
+                "Assessment": {},
+                "Scholar": {},
+                "Admin": {}
+            },
+            "Requests": {
+                "Account": {},
+                "Social": {},
+                "Scholar": {},
+                "Admin": {}
+            },
+            "Feedback": {
+                "Account": {},
+                "Journal": {},
+                "Social": {},
+                "Assessment": {},
+                "Scholar": {},
+                "Admin": {}
+            },
+            "Performance": {
+                "Account": {},
+                "Journal": {},
+                "Social": {},
+                "Assessment": {},
+                "Scholar": {},
+                "Admin": {}
+            },
+            "Schedule": {
+                "Journal": {},
+                "Social": {},
+                "Assessment": {},
+                "Scholar": {},
+                "Admin": {}
+            },
+            "Team": {
+                "Social": {},
+                "Admin": {}
+            },
+            "Console Settings": {}
+        },
+        "Help Desk": {
+            "General": {},
+            "Feature Console": {},
+            "Feature Tab": {},
+            "Feature Name": {},
+            "Feature Navigation": {},
+            "Feature Guide": {},
+            "Tutorials": {},
+            "FAQ": {},
+            "Feedback": {},
+            "Feedback Intentions": {},
+            "Feedback Tones": {},
+            "Feedback Comments": {},
+            "Helper Chat": {}
+        },
+        "Console": {
+            "General": {},
+            "Console Title": {},
+            "Console Progress": {},
+            "Console Desk": {},
+            "Console Desk Progress": {},
+            "Time": {},
+            "Date": {},
+            "Sidebar Toggle": {},
+            "Console Tabs": {},
+            "Help Toggle": {}
+        }
+    },
+    
+    "Console Desk": {
+        "Dash": {
+            "Default Tab": {},
+            "Notifications Tab": {},
+            "Feedback Tab": {},
+            "Requests Tab": {
+                "Inbound Connections": {},
+                "Outbound Connections": {},
+                "Join Cluster": {},
+                "Join Community": {},
+                "Follow Community": {},
+                "Join District": {},
+                "Follow District": {},
+                "Join Region": {},
+                "Follow Region": {},
+                "Training Application": {},
+                "Support Application": {},
+                "Role Support Application": {},
+                "Role Application": {},
+                "Dept Support Application": {},
+                "Dept Leader Application": {}
+            },
+            "Performance Tab": {
+                "": {},
+                "Account": {},
+                "Journal": {},
+                "Social": {},
+                "Assess": {},
+                "Scholar": {},
+                "Admin": {}
+            },
+            "Schedule Tab": {
+                "": {},
+                "Account": {},
+                "Journal": {},
+                "Social": {},
+                "Assess": {},
+                "Scholar": {},
+                "Admin": {}
+            },
+            "Team Tab": {
+
+            }
+        },
+        "Account": {
+            "Profile Tab": {
+                "BLANKFeature": {},
+                "Profile Picture": {},
+                "Profile Card": {},
+                "Customization": {}
+            },
+            "Connections Tab": {
+                "Group Management": {},
+                "Access Management": {},
+                "Member Management": {}
+            },
+            "Portfolio Tab": {
+                "Assessment Portfolio": {},
+                "Scholar Portfolio": {},
+                "Admin Portfolio": {}
+            },
+            "Voice Tab": {
+                "Flags": {},
+                "Reactions": {},
+                "Responses": {},
+                "": {}
+            },
+            "Activity Tab": {
+                "Dash Activity": {},
+                "Journal Activity": {},
+                "Account Activity": {},
+                "Social Activity": {},
+                "Assessment Activity": {},
+                "Scholar Activity": {},
+                "Admin Activity": {}
+            }
+        },
+        "Journal": {
+            "Questionnaire Tab": {},
+            "Self-Care Tab": {},
+            "Pasttimes Tab": {},
+            "Practice Tab": {},
+            "Projects Tab": {},
+            "Journal Settings": {}
+        },
+        "Social": {
+            "BLANKTab Tab": {},
+            "Transfer Tab": {},
+            "Academy Tab": {
+                "Academy General": {},
+                "Academy Team": {},
+                "Academy Roster": {},
+                "Academy Forum": {},
+                "Academy Forum Poll": {},
+                "Academy Forum Post": {},
+                "Academy Forum Response": {},
+                "Academy Forum Reaction": {},
+                "Academy Bulletin": {},
+                "Academy Bulletin Post": {},
+                "Academy Results": {}
+            },
+            "Region Tab": {
+                "Region General": {},
+                "Region Team": {},
+                "Region Roster": {},
+                "Region Forum": {},
+                "Region Forum Poll": {},
+                "Region Forum Post": {},
+                "Region Forum Response": {},
+                "Region Forum Reaction": {},
+                "Region Bulletin": {},
+                "Region Bulletin Post": {},
+                "Region Results": {}
+            },
+            "District Tab": {
+                "District General": {},
+                "District Team": {},
+                "District Roster": {},
+                "District Forum": {},
+                "District Forum Poll": {},
+                "District Forum Post": {},
+                "District Forum Response": {},
+                "District Forum Reaction": {},
+                "District Bulletin": {},
+                "District Bulletin Post": {},
+                "District Results": {}
+            },
+            "Community Tab": {
+                "Community General": {},
+                "Community Team": {},
+                "Community Roster": {},
+                "Community Forum": {},
+                "Community Forum Poll": {},
+                "Community Forum Post": {},
+                "Community Forum Response": {},
+                "Community Forum Reaction": {},
+                "Community Bulletin": {},
+                "Community Bulletin Post": {},
+                "Community Results": {}
+            },
+            "Cluster Tab": {
+                "Cluster General": {},
+                "Cluster Lead": {},
+                "Cluster Roster": {},
+                "Cluster Forum": {},
+                "Cluster Forum Poll": {},
+                "Cluster Forum Post": {},
+                "Cluster Forum Response": {},
+                "Cluster Forum Reaction": {},
+                "Cluster Bulletin": {},
+                "Cluster Bulletin Post": {},
+                "Cluster Results": {}
+            },
+            "Social Settings": {}
+        },
+        "Assessment": {
+            "Assessment Catalog": {},
+            "Identity Tab": {
+                "General": {},
+                "AssessmentStep": {},
+                "Results": {}
+            },
+            "Self-Esteem Tab": {
+                "General": {},
+                "AssessmentStep": {},
+                "Results": {}
+            },
+            "Other-Esteem Tab": {
+                "General": {},
+                "AssessmentStep": {},
+                "Results": {}
+            },
+            "Interactivity Tab": {
+                "General": {},
+                "AssessmentStep": {},
+                "Results": {}
+            },
+            "Persona Tab": {
+                "General": {},
+                "AssessmentStep": {},
+                "Results": {}
+            },
+            "Familiarity Tab": {
+                "General": {},
+                "AssessmentStep": {},
+                "Results": {}
+            },
+            "Appreciation Tab": {
+                "General": {},
+                "AssessmentStep": {},
+                "Results": {}
+            },
+            "Expression Tab": {
+                "General": {},
+                "AssessmentStep": {},
+                "Results": {}
+            },
+            "Style Tab": {
+                "General": {},
+                "AssessmentStep": {},
+                "Results": {}
+            },
+            "Creativity Tab": {
+                "General": {},
+                "AssessmentStep": {},
+                "Results": {}
+            },
+            "Awareness Tab": {
+                "General": {},
+                "AssessmentStep": {},
+                "Results": {}
+            },
+            "Technique Tab": {
+                "General": {},
+                "AssessmentStep": {},
+                "Results": {}
+            },
+            "BLANKTab Tab": {
+                "General": {},
+                "AssessmentStep": {},
+                "Results": {}
+            },
+            "Assessment Settings": {}
+        },
+        "Scholar": {
+            "Course Catalog": {},
+            "General Support Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Content Support Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Scholar Support Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Assessment Support Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Tech Support Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Community Support Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Attendant Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Channel Support Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "District Support Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Manager Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Designer Support Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Designer Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Instructor Support Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Instructor Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Developer Support Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Developer Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Translator Support Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Translator Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Artist Support Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Artist Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Writer Support Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Writer Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Region Support Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Director Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Architect Support Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Architect Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Curriculator Support Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Curriculator Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Engineer Support Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Engineer Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Editor Support Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Editor Course Tab": {
+                "Course General": {},
+                "Lessons": {},
+                "Resources": {},
+                "Training": {},
+                "Practice": {},
+                "Exams": {}
+            },
+            "Scholar Settings": {
+                "Scholar Schedule": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View ":["",""],
+                        "Add ":["",""],
+                        "Edit ":["",""],
+                        "Delete ":["",""],
+                        
+                        "howTo":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                }
+            }
+        },
+        "Admin": {
+            "BLANKTab Tab": {},
+            "Feedback Processing Tab": {
+                "Feature Sort": {},
+                "Intention Sort": {},
+                "Tone Sort": {},
+                "Amendment": {},
+                "Eplicate": {},
+                "Annotate": {},
+                "Approval": {}
+            },
+            "Channel Support Tab": {
+                "": {},
+                "Coordinate": {},
+                "Integrate": {}
+            },
+            "Designer Tab": {
+                "": {},
+                "Item MGMT": {}
+            },
+            "Instructor Tab": {
+                "": {},
+                "Sandbox MGMT": {},
+                "Disputes": {},
+                "Rubric Scoring": {}
+            },
+            "Developer Tab": {
+                "Outages": {},
+                "Issues": {},
+                "Errors": {},
+                "Testing": {},
+                "Studio": {},
+                "Resolve": {}
+            },
+            "Translator Tab": {
+                "Studio": {},
+                "Revise": {},
+                "Review": {},
+                "Preview": {},
+                "Publish": {}
+            },
+            "Artist Tab": {
+                "Pitches": {},
+                "Sketch": {},
+                "Studio": {},
+                "Edits": {},
+                "Review": {},
+                "Preview": {},
+                "Publish": {}
+            },
+            "Writer Tab": {
+                "Outline": {},
+                "Studio": {},
+                "Revise": {},
+                "Review": {},
+                "Preview": {},
+                "Publish": {}
+            },
+            "Collective MGMT Tab": {
+                "Academy": {},
+                "Region": {},
+                "District": {},
+                "Community": {},
+                "Cluster": {},
+                "Blank": {}
+            },
+            "Queues Tab": {},
+            "Projects Tab": {
+                "Director Projects": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View ":["",""],
+                        "Create ":["",""],
+                        "Edit ":["",""],
+                        "Delete ":["",""],
+                        
+                        "howTo":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                },
+                "Engineer Projects": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View ":["",""],
+                        "Create ":["",""],
+                        "Edit ":["",""],
+                        "Delete ":["",""],
+                        
+                        "howTo":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                },
+                "Architect Projects": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View Selves":["",""],
+                        "Create Selves":["",""],
+                        "Edit Selves":["",""],
+                        "Delete Selves":["",""],
+                        
+                        "View Functions":["",""],
+                        "Create Functions":["",""],
+                        "Edit Functions":["",""],
+                        "Delete Functions":["",""],
+                        
+                        "View Traits":["",""],
+                        "Create Traits":["",""],
+                        "Edit Traits":["",""],
+                        "Delete Traits":["",""],
+                        
+                        "View Subtraits":["",""],
+                        "Create Subtraits":["",""],
+                        "Edit Subtraits":["",""],
+                        "Delete Subtraits":["",""],
+                        
+                        "View Factors":["",""],
+                        "Create Factors":["",""],
+                        "Edit Factors":["",""],
+                        "Delete Factors":["",""],
+                        
+                        "View Designer Interface":["",""],
+                        "Create Designer Interface":["",""],
+                        "Edit Designer Interface":["",""],
+                        "Delete Designer Interface":["",""],
+                        
+                        "View ":["",""],
+                        "Create ":["",""],
+                        "Edit ":["",""],
+                        "Delete ":["",""],
+                        
+                        "howTo":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                },
+                "Editor Projects": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View ":["",""],
+                        "Create ":["",""],
+                        "Edit ":["",""],
+                        "Delete ":["",""],
+                        
+                        "howTo":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                },
+                "Curriculator Projects": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View References":["",""],
+                        "Create References":["",""],
+                        "Edit References":["",""],
+                        "Delete References":["",""],
+
+                        "View Resources":["",""],
+                        "Create Resources":["",""],
+                        "Edit Resources":["",""],
+                        "Delete Resources":["",""],
+
+                        "View Courses":["",""],
+                        "Create Courses":["",""],
+                        "Edit Courses":["",""],
+                        "Delete Courses":["",""],
+
+                        "View Lessons":["",""],
+                        "Create Lessons":["",""],
+                        "Edit Lessons":["",""],
+                        "Delete Lessons":["",""],
+
+                        "View Training":["",""],
+                        "Create Training":["",""],
+                        "Edit Training":["",""],
+                        "Delete Training":["",""],
+
+                        "View Practice":["",""],
+                        "Create Practice":["",""],
+                        "Edit Practice":["",""],
+                        "Delete Practice":["",""],
+
+                        "View Exams":["",""],
+                        "Create Exams":["",""],
+                        "Edit Exams":["",""],
+                        "Delete Exams":["",""],
+
+                        "View ":["",""],
+                        "Create ":["",""],
+                        "Edit ":["",""],
+                        "Delete ":["",""],
+
+                        "":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                }
+            },
+            "Teams Tab": {
+                "Advanced Department Support MGMT": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View Advanced Dept Support":["",""],
+                        "Add Advanced Dept Support":["",""],
+                        "Edit Advanced Dept Support":["",""],
+                        "Remove Advanced Dept Support":["",""],
+                        
+                        "howTo":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                },
+                "Department Support MGMT": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View Department Support":["",""],
+                        "Add Department Support":["",""],
+                        "Edit Department Support":["",""],
+                        "Remove Department Support":["",""],
+                        
+                        "howTo":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                },
+                "Writer MGMT": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View Writers":["",""],
+                        "Add Writers":["",""],
+                        "Edit Writers":["",""],
+                        "Remove Writers":["",""],
+                        
+                        "howTo":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                },
+                "Artist MGMT": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View Artists":["",""],
+                        "Add Artists":["",""],
+                        "Edit Artists":["",""],
+                        "Remove Artists":["",""],
+                        
+                        "howTo":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                },
+                "Translator MGMT": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View Translators":["",""],
+                        "Add Translators":["",""],
+                        "Edit Translators":["",""],
+                        "Remove Translators":["",""],
+                        
+                        "howTo":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                },
+                "Developer MGMT": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View Developers":["",""],
+                        "Add Developers":["",""],
+                        "Edit Developers":["",""],
+                        "Remove Developers":["",""],
+                        
+                        "howTo":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                },
+                "Instructor MGMT": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View Instructors":["",""],
+                        "Add Instructors":["",""],
+                        "Edit Instructors":["",""],
+                        "Remove Instructors":["",""],
+                        
+                        "howTo":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                },
+                "Designer MGMT": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View Designers":["",""],
+                        "Add Designers":["",""],
+                        "Edit Designers":["",""],
+                        "Remove Designers":["",""],
+                        
+                        "howTo":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                },
+                "Channel Support MGMT": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View Channel Support":["",""],
+                        "Add Channel Support":["",""],
+                        "Edit Channel Support":["",""],
+                        "Remove Channel Support":["",""],
+                        
+                        "howTo":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                },
+                "Tier 2 Support MGMT": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View Tier 2 Support":["",""],
+                        "Add Tier 2 Support":["",""],
+                        "Edit Tier 2 Support":["",""],
+                        "Remove Tier 2 Support":["",""],
+                        
+                        "howTo":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                },
+                "Tier 1 Support MGMT": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View Tier 1 Support":["",""],
+                        "Add Tier 1 Support":["",""],
+                        "Edit Tier 1 Support":["",""],
+                        "Remove Tier 1 Support":["",""],
+                        
+                        "howTo":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                }
+            },
+            "Department Tab": {
+                "Dept BLANKFeature": {},
+                "Dept Roster": {},
+                "Dept Schedule": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View Today's Schedule":["",""],
+                        "View Week's Schedule":["",""],
+                        "View Month's Schedule":["",""],
+
+                        "View ":["",""],
+                        "Create ":["",""],
+                        "Edit ":["",""],
+                        "Delete ":["",""],
+                        
+                        "howTo":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                },
+                "Dept Activity": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View ":["",""],
+                        "Create ":["",""],
+                        "Edit ":["",""],
+                        "Delete ":["",""],
+                        
+                        "howTo":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                },
+                "Dept Attendance": {},
+                "Dept Adherence": {},
+                "Dept Achievement": {},
+                "Dept Adequacy": {},
+                "Dept Accomplishment": {}
+            },
+            "Admin Settings": {
+                "Schedule Settings": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View Scheduled Admin Time":["",""],
+                        "Add Scheduled Admin Time":["",""],
+                        "Edit Scheduled Admin Time":["",""],
+                        "Delete Scheduled Admin Time":["",""],
+                        
+                        "View Help Desk Time":["",""],
+                        "Add Help Desk Time":["",""],
+                        "Edit Help Desk Time":["",""],
+                        "Delete Help Desk Time":["",""],
+                        
+                        "View ":["",""],
+                        "Create ":["",""],
+                        "Edit ":["",""],
+                        "Delete ":["",""],
+                        
+                        "howTo":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                },
+                "Role Settings": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View Queues":["",""],
+                        "Asssign Queues":["",""],
+                        "Edit Queues":["",""],
+                        "Unassign Queues":["",""],
+                        
+                        "View ":["",""],
+                        "Create ":["",""],
+                        "Edit ":["",""],
+                        "Delete ":["",""],
+                        
+                        "howTo":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                },
+                "Help Desk Settings": {
+                    "Description": "", 
+                    "Guide": {
+                        "paragraph#": ["",""]
+                    }, 
+                    "FAQs": {
+                        "": ""
+                    }, 
+                    "Tutorials": {
+                        "View Channels":["",""],
+                        "Asssign Channels":["",""],
+                        "Edit Channels":["",""],
+                        "Unassign Channels":["",""],
+                        
+                        "View ":["",""],
+                        "Create ":["",""],
+                        "Edit ":["",""],
+                        "Delete ":["",""],
+                        
+                        "howTo":["",""]
+                    },
+                    "Links": {
+                        "": ["", "", ""]
+                    },
+                    "Feedback": {
+                        "original": ["","","", "", "", "", "", ""], 
+                        "explication": ["",""],
+                        "annotation": {
+                            "":""
+                        },
+                        "toning": {
+                            "":""
+                        },
+                        "flags": {
+                            "adminID":""
+                        },
+                        "approvals": [""],
+                        "rejections": [""],
+                        "views": [""]
+                        
+                    }
+                },
+                "Support Settings": {},
+                "": {}
+            }
+        },
+        "Helper": {
+            "Default Screen": {},
+            "Queue Monitor": {
+                "Support Queues": {},
+                "Role Queues": {},
+                "Department Queues": {},
+                "Pending Chats": {},
+                "Available Helpers": {},
+                "Active Helpers": {},
+                "Active Admin": {},
+                "": {}
+            },
+            "Chat Tabs": {
+                "": {},
+                "New Chat Tab": {},
+                "Active Chat Tabs": {},
+                "Inactive Chat Tabs": {},
+                "Available Chat Tabs": {}
+            },
+            "Chat Transcript": {
+                "Messages": {},
+                "Replies": {},
+                "Forms": {},
+                "Actions": {},
+                "Links": {}
+            },
+            "User Information": {
+                "General Details": ["preferred name","help path","pronouns","role"], 
+                "Account Details": ["engagement","settings","details","schedule"],
+                "Social Details": ["","","","",""],
+                "Assessment Details": ["","","","",""],
+                "Scholar Details": ["","","","",""],
+                "Admin Details": ["","","","",""],
+                "Feedback History": ["","","","",""]
+            },
+            "Help Tool": {
+                "BLANKFeature": {},
+                "Quick Replies": {},
+                "Routines": {},
+                "Feedback": {},
+                "Links": {}
+            },
+            "": {}
+        }
+
+    },
+       
+    "TemplateConsole": {
+        "BLANKTab": {
+            "BLANKFeature": {
+                "Description": "", 
+                "Guide": {
+                    "paragraph#": ["",""]
+                }, 
+                "FAQs": {
+                    "question": "answer"
+                }, 
+                "Tutorials": {
+                    "howTo":["",""]
+                },
+                "Links": {
+                    "feature": ["console", "tab", "feature"]
+                },
+                "Feedback": {
+                    "original": ["feedbackID","creator","console", "tab", "feature", "intention", "tone", "creatorComments"], 
+                    "explication": ["",""],
+                    "annotation": {
+                        "adminID":"admin note"
+                    },
+                    "toning": {
+                        "adminID":"admin toning"
+                    },
+                    "flags": {
+                        "adminID":"admin flag"
+                    },
+                    "approvals": ["adminID"],
+                    "rejections": ["adminID"],
+                    "views": ["adminID"]
+                    
+                }
+            }
+        }
+    },
+       
+    "BLANKConsole": {
+        "BLANKTab": {
+            "BLANKFeature": {
+                "Description": "", 
+                "Guide": {
+                    "paragraph#": ["",""]
+                }, 
+                "FAQs": {
+                    "": ""
+                }, 
+                "Tutorials": {
+                    "howTo":["",""]
+                },
+                "Links": {
+                    "": ["", "", ""]
+                },
+                "Feedback": {
+                    "original": ["","","", "", "", "", "", ""], 
+                    "explication": ["",""],
+                    "annotation": {
+                        "":""
+                    },
+                    "toning": {
+                        "":""
+                    },
+                    "flags": {
+                        "adminID":""
+                    },
+                    "approvals": [""],
+                    "rejections": [""],
+                    "views": [""]
+                    
+                }
+            }
+        }
+    }
+}

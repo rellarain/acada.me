@@ -1,14 +1,11 @@
 import { useState, useEffect } from 'react';
 
 interface WindowDimensions {
-  viewportWidth: number | undefined;
-  viewportHeight: number | undefined;
+  viewportWidth: number;
+  viewportHeight: number;
 }
 
 function getWindowDimensions(): WindowDimensions {
-  if (typeof window === 'undefined') {
-    return { viewportWidth: undefined, viewportHeight: undefined };
-  }
   const { innerWidth: viewportWidth, innerHeight: viewportHeight } = window;
   return { viewportWidth, viewportHeight };
 }
