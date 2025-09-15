@@ -54,10 +54,7 @@ function App() {
       setOpenServiceConsole("");
     } else {setOpenServiceConsole("Admin");}
   }
-  function closeServiceConsoles() {
-    setOpenServiceConsole("");
-    setAccountConsoleState("Closed");
-  }
+
 
   // Help Console Toggle
   const [helperConsoleState, setHelperConsoleState] = useState("Closed");
@@ -90,22 +87,33 @@ function App() {
   }
 
 
+
   // Social Navigation-------------- UNFINISHED!!!!!!!
 
-  let districtSpec = "0000";
-  let communitySpec = "0000";
-  let userSpec = "00000";
-  let regionID= "000";
-  let districtID = regionID+"-"+districtSpec;
-  let communityID = districtID+"-"+communitySpec;
-  let userID = communityID+"-"+userSpec;
+  let districtSpec: string = "0000";
+  let communitySpec: string = "0000";
+  let userSpec: string = "00000";
+  let regionID: string= "000";
+  let districtID: string = regionID+"-"+districtSpec;
+  let communityID: string = districtID+"-"+communitySpec;
+  let userID: string = communityID+"-"+userSpec;
 
 
   const [socialSpaceCode,setSocialSpaceCode] = useState("");
   function handleSocialRegion() {
-    if (socialSpaceCode !== "") {
-      
-    }
+    if (socialSpaceCode !== regionID) {
+      setSocialSpaceCode(regionID);
+    } else {setSocialSpaceCode(""); setOpenUserConsole("Dash");}
+  }
+  function handleSocialDistrict() {
+    if (socialSpaceCode !== districtID) {
+      setSocialSpaceCode(districtID);
+    } else {setSocialSpaceCode("")}
+  }
+  function handleSocialCommunity() {
+    if (socialSpaceCode !== communityID) {
+      setSocialSpaceCode(communityID);
+    } else {setSocialSpaceCode("")}
   }
 
 
@@ -124,7 +132,7 @@ function App() {
       <main>
         <div className={"userConsoles"}>
           <div className={"userConsole plannerConsole"}>
-            <Console consoleTitle='Planner'/>
+            <Console consoleTitle='Planner' helperSize={helperConsoleSize} helperState={helperConsoleState}/>
             <button className={'consoleClose'} onClick={handleUserDash}>X</button>
           </div>
           <div className={"userConsole dashConsole"}>
@@ -142,20 +150,20 @@ function App() {
           </div>
           <div className={"userConsole socialConsole"}>
             Social<br/>
-            socialSpaceCode<br/>
+            {socialSpaceCode}<br/>
             <button className={'consoleClose'} onClick={handleUserDash}>X</button>
           </div>
         </div>
         <div className={'serviceConsole assessmentConsole'}>
-          <Console consoleTitle='Assessment'/>
+          <Console consoleTitle='Assessment' helperSize={helperConsoleSize} helperState={helperConsoleState}/>
           <button className={'consoleClose'} onClick={handleAssessConsole}>X</button>
         </div>
         <div className={'serviceConsole scholarConsole'}>
-          <Console consoleTitle='Scholar'/>
+          <Console consoleTitle='Scholar' helperSize={helperConsoleSize} helperState={helperConsoleState}/>
           <button className={'consoleClose'} onClick={handleScholarConsole}>X</button>
         </div>
         <div className={'serviceConsole adminConsole'}>
-          <Console consoleTitle='Admin'/>
+          <Console consoleTitle='Admin' helperSize={helperConsoleSize} helperState={helperConsoleState}/>
           <button className={'consoleClose'} onClick={handleAdminConsole}>X</button>
         </div>
       </main>
@@ -163,7 +171,7 @@ function App() {
         <img onClick={handleAccountState}/>
         <table className='workDay'></table>
         <div className='accountConsole'>
-          <Console consoleTitle='Account'/>
+          <Console consoleTitle='Account' helperSize={helperConsoleSize} helperState={helperConsoleState}/>
           <br/>
           <br/>
           <br/>
@@ -187,11 +195,11 @@ function App() {
           <br/> Portfolio: 
           <br/>
           <br/>
-          <button className='consoleClose' onClick={handleAccountState}>x</button>
+          <button className='consoleClose' onClick={handleAccountState}>X</button>
           
 
         </div>
-        <div className={'socialButtons'}><button onClick={handleUserSocial}>{regionID}</button>-<button onClick={handleUserSocial}>{districtSpec}</button>-<button onClick={handleUserSocial}>{communitySpec}</button>-<button onClick={handleUserSocial}>{userSpec}</button></div>
+        <div className={'socialButtons'}><button onClick={handleSocialRegion}>{regionID}</button>-<button onClick={handleSocialDistrict}>{districtSpec}</button>-<button onClick={handleSocialCommunity}>{communitySpec}</button>-<button onClick={handleUserSocial}>{userSpec}</button></div>
 
       </header>
     </div>

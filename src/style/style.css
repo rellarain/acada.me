@@ -213,6 +213,7 @@ table {
   top: 60px;
   transition: width 1s, right 1s;
   box-shadow: rgba(0, 0, 0, 0.3) -8px 0 8px;
+  overflow: hidden;
   height: calc(100vh - 60px);
 }
 #root main .userConsoles {
@@ -225,25 +226,25 @@ table {
 }
 #root main .userConsoles .userConsole {
   position: absolute;
-  height: calc(100vh - 140px);
-  width: calc(100% - 80px);
-  left: 40px;
+  height: calc(100vh - 120px);
+  width: calc(100% - 60px);
+  left: 30px;
   overflow: hidden;
 }
 #root main .userConsoles .userConsole:nth-child(1) {
-  top: 40px;
+  top: 30px;
 }
 #root main .userConsoles .userConsole:nth-child(2) {
-  top: calc(100vh + 10px);
+  top: 100vh;
 }
 #root main .userConsoles .userConsole:nth-child(3) {
-  top: calc(200vh + 10px);
+  top: 200vh;
 }
 #root main .serviceConsole {
-  margin: 30px;
+  margin: 20px;
   position: absolute;
-  width: calc(100% - 60px);
-  height: calc(100vh - 120px);
+  width: calc(100% - 40px);
+  height: calc(100vh - 100px);
   border-radius: 4px;
   overflow: hidden;
 }
@@ -278,6 +279,7 @@ table {
   position: absolute;
   top: 20px;
   left: 10px;
+  line-height: 40px;
   text-transform: uppercase;
 }
 #root .console .consoleTime {
@@ -285,27 +287,91 @@ table {
   font-weight: 600;
   letter-spacing: 1.5px;
   position: absolute;
-  right: 60px;
+  right: 50%;
+  right: 50px;
   top: 20px;
   line-height: 20px;
 }
 #root .console .consoleDate {
   font-size: 16px;
   position: absolute;
-  right: 60px;
+  right: 50px;
   top: 40px;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 20px;
 }
+#root .console .consoleSidebarBtn {
+  position: absolute;
+  left: 10px;
+  top: 70px;
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  font-weight: 600;
+}
+#root .console .consoleHelpBtn {
+  position: absolute;
+  right: 10px;
+  top: 70px;
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  font-weight: 600;
+}
+#root .console .consoleTabs {
+  height: 40px;
+  position: absolute;
+  width: calc(100% - 120px);
+  background-color: rgba(255, 255, 255, 0.342);
+  left: 60px;
+  top: 70px;
+}
+#root .console .consoleFooter {
+  position: absolute;
+  height: 24px;
+  width: calc(100% - 10px);
+  font-weight: 600;
+  line-height: 24px;
+  text-align: right;
+  font-size: 16px;
+  bottom: 0;
+  left: 0;
+  color: rgba(255, 255, 255, 0.37);
+}
+#root .console .consoleSidebar {
+  top: 130px;
+  width: 370px;
+  height: calc(100% - 165px);
+  position: absolute;
+  left: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#root .console .consoleHelp {
+  top: 130px;
+  width: 370px;
+  height: calc(100% - 165px);
+  position: absolute;
+  right: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#root .console .consoleDesk {
+  top: 120px;
+  width: calc(100% - 800px);
+  height: calc(100% - 148px);
+  position: absolute;
+  left: 400px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
 #root .consoleClose {
   position: absolute;
   top: 20px;
   right: 10px;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   padding: 0;
+  line-height: 30px;
   font-weight: 600;
   font-size: 16px;
 }

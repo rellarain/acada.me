@@ -252,6 +252,7 @@ $alertHue: 50;
         top: 60px;
         transition: width 1s, right 1s;
         box-shadow: rgba(0, 0, 0, 0.3) -8px 0 8px;
+        overflow: hidden;
 
         // TOGGLE STYLING
         height: calc(100vh - 60px);
@@ -274,23 +275,23 @@ $alertHue: 50;
 
             .userConsole {
                 position: absolute;
-                height: calc(100vh - 140px);
-                width: calc(100% - 80px);
-                left: 40px;
+                height: calc(100vh - 120px);
+                width: calc(100% - 60px);
+                left: 30px;
                 // border-radius: 4px;
                 overflow: hidden;
 
 
-                &:nth-child(1) {top: 40px;}
-                &:nth-child(2) {top: calc(100vh + 10px);}
-                &:nth-child(3) {top: calc(200vh + 10px);}
+                &:nth-child(1) {top: 30px;}
+                &:nth-child(2) {top: 100vh;}
+                &:nth-child(3) {top: 200vh;}
             }
         }
         .serviceConsole {
-            margin: 30px;
+            margin: 20px;
             position: absolute;
-            width: calc(100% - 60px);
-            height: calc(100vh - 120px);
+            width: calc(100% - 40px);
+            height: calc(100vh - 100px);
             border-radius: 4px;
             overflow: hidden;
         }
@@ -314,62 +315,130 @@ $alertHue: 50;
 
 
     
-        .console {
+    .console {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        .consoleProgress {
             width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-
-            .consoleProgress {
-                width: 100%;
-                height: 10px;
-                background-color: rgba(0, 0, 0, 0.4);
-            }
-            .consoleTitle {
-                font-size: 24px;
-                font-weight: 600;
-                letter-spacing: 2px;
-                position: absolute;
-                top: 20px;
-                left: 10px;
-                text-transform: uppercase;
-            }
-            .consoleTime {
-                font-size: 20px;
-                font-weight: 600;
-                letter-spacing: 1.5px;
-                position: absolute;
-                right: 60px;
-                top: 20px;
-                line-height: 20px;
-            }
-            .consoleDate {
-                font-size: 16px;
-                position: absolute;
-                right: 60px;
-                top: 40px;
-                font-weight: 600;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                line-height: 20px;
-            }
+            height: 10px;
+            background-color: rgba(0, 0, 0, 0.4);
         }
-
-
-
-
-
-        .consoleClose {
+        .consoleTitle {
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 2px;
             position: absolute;
             top: 20px;
-            right: 10px;
+            left: 10px;
+            line-height: 40px;
+            text-transform: uppercase;
+        }
+        .consoleTime {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            position: absolute;
+            right: 50%;
+            right: 50px;
+            top: 20px;
+            line-height: 20px;
+        }
+        .consoleDate {
+            font-size: 16px;
+            position: absolute;
+            right: 50px;
+            top: 40px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            line-height: 20px;
+        }
+        .consoleSidebarBtn {
+            position: absolute;
+            left: 10px;
+            top: 70px;
             height: 40px;
             width: 40px;
-            padding: 0;
-            font-weight: 600;
             font-size: 16px;
+            font-weight: 600;
         }
+        .consoleHelpBtn {
+            position: absolute;
+            right: 10px;
+            top: 70px;
+            height: 40px;
+            width: 40px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .consoleTabs {
+            height: 40px;
+            position: absolute;
+            width: calc(100% - 120px);
+            background-color: rgba(255, 255, 255, 0.342);
+            left: 60px;
+            top: 70px;
+        }
+        .consoleFooter {
+            position: absolute;
+            height: 24px;
+            width: calc(100% - 10px);
+            font-weight: 600;
+            line-height: 24px;
+            text-align: right;
+            font-size: 16px;
+            bottom: 0;
+            left: 0;
+            // background-color: green;
+            color: rgba(255, 255, 255, 0.37);
+        }
+        .consoleSidebar {
+            top: 130px;
+            width: 370px;
+            height: calc(100% - 165px);
+            position: absolute;
+            left: 15px;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .consoleHelp {
+            top: 130px;
+            width: 370px;
+            height: calc(100% - 165px);
+            position: absolute;
+            right: 15px;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .consoleDesk {
+            top: 120px;
+            width: calc(100% - 800px);
+            height: calc(100% - 148px);
+            position: absolute;
+            left: 400px;
+            background-color: rgba(0, 0, 0, 0.3);
+
+        }
+
+    }
+
+
+
+
+
+    .consoleClose {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        height: 30px;
+        width: 30px;
+        padding: 0;
+        line-height: 30px;
+        font-weight: 600;
+        font-size: 16px;
+    }
 }
 
 
