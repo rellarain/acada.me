@@ -124,7 +124,7 @@ function App() {
 
 
   return (
-    <div className={"interface accountConsole"+accountConsoleState+" userConsole"+openUserConsole+" openService"+openServiceConsole+" helper"+helperConsoleSize+helperConsoleState}>
+    <div className={"interface accountConsole"+accountConsoleState+" userConsole"+openUserConsole+" openService"+openServiceConsole+" helper"+helperConsoleSize+helperConsoleState+" "+viewportColumns+"c"+viewportRows+"r"}>
       <aside>helper
         <button onClick={handleHelperConsoleState}>?</button>
         <button onClick={handleHelperConsoleSize}>{helperConsoleSize}</button>

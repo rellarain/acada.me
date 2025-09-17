@@ -148,6 +148,9 @@ table {
   overflow: hidden;
   font-family: sans-serif;
 }
+#root .interface {
+  background-color: red;
+}
 #root #userHeader {
   width: 100vw;
   position: absolute;
@@ -180,7 +183,6 @@ table {
   position: absolute;
   bottom: 75px;
   left: 15px;
-  background-color: rgb(212, 212, 212);
   border-radius: 4px;
 }
 #root #userHeader .socialButtons {
@@ -247,6 +249,7 @@ table {
   height: calc(100vh - 100px);
   border-radius: 4px;
   overflow: hidden;
+  box-shadow: hsla(0, 0%, 0%, 0.5) 0 6px 6px;
 }
 #root main .assessmentConsole {
   background-color: rgb(119, 33, 33);
@@ -324,7 +327,6 @@ table {
   height: 40px;
   position: absolute;
   width: calc(100% - 120px);
-  background-color: rgba(255, 255, 255, 0.342);
   left: 60px;
   top: 70px;
 }
